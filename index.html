@@ -70,6 +70,8 @@
               <a href="#hero" class="nav-item nav-link active">Home</a>
               <a href="#about" class="nav-item nav-link">About Us</a>
               <a href="#service" class="nav-item nav-link">Services</a>
+              <a href="#work-with-us" class="nav-item nav-link">Work with us</a>
+
               <a href="#service" class="nav-item nav-link">Contact</a>
             </div>
           </div>
@@ -429,6 +431,113 @@
       </div>
     </section>
     <!-- Service End -->
+
+    <section id="work-with-us">
+      <div class="container-fluid py-5 bg-light">
+        <div class="container py-5">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-6">
+              <h1 class="mb-5">
+                <span
+                  class="text-uppercase text-primary bg-white px-3 py-1 rounded"
+                >
+                  Work with Us
+                </span>
+              </h1>
+
+              <form
+                id="applicationForm"
+                method="POST"
+                action="http://54.241.118.57:8000/send-application/"
+                enctype="multipart/form-data"
+                class="text-start"
+              >
+                <div class="mb-3">
+                  <label for="name" class="form-label fw-bold">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="phone" class="form-label fw-bold"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="address" class="form-label fw-bold"
+                    >Address</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="address"
+                    name="address"
+                    rows="2"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label for="available_location" class="form-label fw-bold"
+                    >Available Location</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="available_location"
+                    name="available_location"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="preferred_work" class="form-label fw-bold"
+                    >Preferred Work</label
+                  >
+                  <select
+                    class="form-select"
+                    id="preferred_work"
+                    name="preferred_work"
+                    multiple
+                    required
+                  >
+                    <option value="Maid">Maid</option>
+                    <option value="Cook">Cook</option>
+                    <option value="Nanny">Nanny</option>
+                    <option value="Caregiver">Caregiver</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <small class="text-muted"
+                    >Hold Ctrl (Windows) or Cmd (Mac) to select multiple
+                    options.</small
+                  >
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary px-5 py-2 mt-3">
+                    Submit Application
+                  </button>
+                </div>
+              </form>
+
+              <div id="responseMessage" class="mt-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">

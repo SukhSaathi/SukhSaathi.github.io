@@ -69,7 +69,7 @@ document
     // Send POST request to FastAPI
     try {
       const response = await fetch(
-        "http://54.241.118.57:8000/send-application/",
+        "https://api.sukhsaathi.com/send-application/",
         {
           method: "POST",
           body: formData,

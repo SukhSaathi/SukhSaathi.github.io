@@ -453,58 +453,68 @@
                 class="text-start"
               >
                 <div class="mb-3">
-                  <label for="name" class="form-label fw-bold">Full Name</label>
+                  <label for="name" class="form-label fw-bold"
+                    >Full Name (पूरा नाम)</label
+                  >
                   <input
                     type="text"
                     class="form-control"
                     id="name"
                     name="name"
+                    placeholder="e.g. Raj Kumar — पूरा नाम लिखें"
                     required
+                    aria-label="Full Name (पूरा नाम)"
                   />
                 </div>
 
                 <div class="mb-3">
                   <label for="phone" class="form-label fw-bold"
-                    >Phone Number</label
+                    >Phone Number (फोन नंबर)</label
                   >
                   <input
                     type="tel"
                     class="form-control"
                     id="phone"
                     name="phone"
+                    placeholder="e.g. 91XXXXXXXXXX — अपना फोन नंबर डालें"
                     required
+                    aria-label="Phone Number (फोन नंबर)"
                   />
                 </div>
 
                 <div class="mb-3">
                   <label for="address" class="form-label fw-bold"
-                    >Address</label
+                    >Address (पता)</label
                   >
                   <textarea
                     class="form-control"
                     id="address"
                     name="address"
                     rows="2"
+                    placeholder="अपना पूरा पता लिखें"
                     required
+                    aria-label="Address (पता)"
                   ></textarea>
                 </div>
 
                 <div class="mb-3">
                   <label for="available_location" class="form-label fw-bold"
-                    >Available Location</label
+                    >Available Location (उपलब्ध स्थान)</label
                   >
                   <input
                     type="text"
                     class="form-control"
                     id="available_location"
                     name="available_location"
+                    placeholder="जैसे: Delhi, Noida — स्थान लिखें"
                     required
+                    aria-label="Available Location (उपलब्ध स्थान)"
                   />
                 </div>
 
                 <div class="mb-3">
                   <label for="preferred_work" class="form-label fw-bold"
-                    >Preferred Work</label
+                    >Preferred Work (पसंदीदा कार्य)</label
                   >
                   <select
                     class="form-select"
@@ -512,22 +522,32 @@
                     name="preferred_work"
                     multiple
                     required
+                    aria-label="Preferred Work (पसंदीदा कार्य)"
                   >
-                    <option value="Maid">Maid</option>
-                    <option value="Cook">Cook</option>
-                    <option value="Nanny">Nanny</option>
-                    <option value="Caregiver">Caregiver</option>
-                    <option value="Other">Other</option>
+                    <option value="Maid">Maid (मेड)</option>
+                    <option value="Cook">Cook (रसोइया)</option>
+                    <option value="Nanny">Nanny (नैनी)</option>
+                    <option value="Caregiver">
+                      Caregiver (देखभाल करने वाला)
+                    </option>
+                    <option value="Other">Other (अन्य)</option>
                   </select>
                   <small class="text-muted"
                     >Hold Ctrl (Windows) or Cmd (Mac) to select multiple
-                    options.</small
-                  >
+                    options.
+                    <br />
+                    (Windows में Ctrl या Mac में Cmd दबाकर एक से अधिक विकल्प
+                    चुनें।)
+                  </small>
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary px-5 py-2 mt-3">
-                    Submit Application
+                  <button
+                    type="submit"
+                    class="btn btn-primary px-5 py-2 mt-3"
+                    aria-label="Submit Application (आवेदन भेजें)"
+                  >
+                    Submit Application (आवेदन भेजें)
                   </button>
                 </div>
               </form>
